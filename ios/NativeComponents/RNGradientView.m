@@ -30,7 +30,7 @@
   
     self._fromColor = [UIColor blackColor];
     self._toColor = [UIColor whiteColor];
-    self._progress = @0.5;
+    self._progress = @"0.5";
     [self update];
   }
   return self;
@@ -56,11 +56,11 @@
   self._toColor = color;
   [self update];
 }
-- (void)setProgress:(NSNumber *)progress {
+- (void)setProgress:(NSString *)progress {
   self._progress = progress;
   [self update];
 }
-- (void)setCornerRadius:(NSNumber *)cornerRadius {
+- (void)setCornerRadius:(NSString *)cornerRadius {
   self._cornerRadius = cornerRadius;
   [self update];
 }
